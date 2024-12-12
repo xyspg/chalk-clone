@@ -1,0 +1,19 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider     = "postgresql"
+  url          = env("DATABASE_URL")
+  relationMode = "prisma"
+}
+
+model chalk_usage {
+  id        Int      @id @default(autoincrement())
+  name      String   @db.VarChar(100)
+  studentId String?  @db.VarChar(100)
+  parent    String?  @db.VarChar(100)
+  timestamp DateTime @default(now()) @db.Timestamp(0)
+  ip        String?  @db.VarChar(45)
+  ua        String?  @db.Text
+}

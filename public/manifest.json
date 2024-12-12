@@ -1,0 +1,16 @@
+{
+  "background_color": "#2563eb",
+  "theme_color": "white",
+  "description": "好用的教学管理系统",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "./static/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "希悦校园",
+  "short_name": "Chalk",
+  "start_url": "/"
+}
